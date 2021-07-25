@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.uasshabri.dashboard.fragment.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/materialFragment"
+        android:name="com.example.uasshabri.dashboard.fragment.material.MaterialFragment"
+        android:label="fragment_material"
+        tools:layout="@layout/fragment_material" >
+        <action
+            android:id="@+id/action_materialFragment_to_addMaterialFragment"
+            app:destination="@id/addMaterialFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_materialFragment_to_updateMaterialFragment"
+            app:destination="@id/updateMaterialFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_materialFragment_to_viewMaterialFragment"
+            app:destination="@id/viewMaterialFragment"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/machineFragment"
+        android:name="com.example.uasshabri.dashboard.fragment.machine.MachineFragment"
+        android:label="fragment_machine"
+        tools:layout="@layout/fragment_machine" >
+        <action
+            android:id="@+id/action_machineFragment_to_addMachineFragment"
+            app:destination="@id/addMachineFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_machineFragment_to_updateMachineFragment"
+            app:destination="@id/updateMachineFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_machineFragment_to_viewMachineFragment"
+            app:destination="@id/viewMachineFragment"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/dailyreportFragment"
+        android:name="com.example.uasshabri.dashboard.fragment.dailyreport.DailyreportFragment"
+        android:label="fragment_dailyreport"
+        tools:layout="@layout/fragment_dailyreport" >
+        <action
+            android:id="@+id/action_dailyreportFragment_to_addDailyreportFragment"
+            app:destination="@id/addDailyreportFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_dailyreportFragment_to_viewDailyreportFragment"
+            app:destination="@id/viewDailyreportFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_dailyreportFragment_to_qrDailyreportFragment"
+            app:destination="@id/qrDailyreportFragment"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/qrscannerFragment"
+        android:name="com.example.uasshabri.dashboard.fragment.qrscanner.QrscannerFragment"
+        android:label="fragment_qrscanner"
+        tools:layout="@layout/fragment_qrscanner" >
+        <action
+            android:id="@+id/action_qrscannerFragment_to_viewDailyreportFragment"
+            app:destination="@id/viewDailyreportFragment"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMachineFragment"
+        android:name="com.example.uasshabri.dashboard.fragment.machine.AddMachineFragment"
+        android:label="fragment_add_machine"
+        tools:layout="@layout/fragment_add_machine" />
+    <fragment
+        android:id="@+id/updateMachineFragment"
+        android:name="com.example.uasshabri.dashboard.fragment.machine.UpdateMachineFragment"
+        android:label="fragment_update_machine"
+        tools:layout="@layout/fragment_update_machine" />
+    <fragment
+        android:id="@+id/viewMachineFragment"
+        android:name="com.example.uasshabri.dashboard.fragment.machine.ViewMachineFragment"
+        android:label="fragment_view_machine"
+        tools:layout="@layout/fragment_view_machine" />
+    <fragment
+        android:id="@+id/addMaterialFragment"
+        android:name="com.example.uasshabri.dashboard.fragment.material.AddMaterialFragment"
+        android:label="fragment_add_material"
+        tools:layout="@layout/fragment_add_material" />
+    <fragment
+        android:id="@+id/updateMaterialFragment"
+        android:name="com.example.uasshabri.dashboard.fragment.material.UpdateMaterialFragment"
+        android:label="fragment_update_material"
+        tools:layout="@layout/fragment_update_material" />
+    <fragment
+        android:id="@+id/viewMaterialFragment"
+        android:name="com.example.uasshabri.dashboard.fragment.material.ViewMaterialFragment"
+        android:label="fragment_view_material"
+        tools:layout="@layout/fragment_view_material" />
+    <fragment
+        android:id="@+id/addDailyreportFragment"
+        android:name="com.example.uasshabri.dashboard.fragment.dailyreport.AddDailyreportFragment"
+        android:label="fragment_add_dailyreport"
+        tools:layout="@layout/fragment_add_dailyreport" />
+    <fragment
+        android:id="@+id/updateDailyreportFragment"
+        android:name="com.example.uasshabri.dashboard.fragment.dailyreport.UpdateDailyreportFragment"
+        android:label="fragment_update_dailyreport"
+        tools:layout="@layout/fragment_update_dailyreport" />
+    <fragment
+        android:id="@+id/viewDailyreportFragment"
+        android:name="com.example.uasshabri.dashboard.fragment.dailyreport.ViewDailyreportFragment"
+        android:label="fragment_view_dailyreport"
+        tools:layout="@layout/fragment_view_dailyreport" >
+        <action
+            android:id="@+id/action_viewDailyreportFragment_to_updateDailyreportFragment"
+            app:destination="@id/updateDailyreportFragment"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/qrDailyreportFragment"
+        android:name="com.example.uasshabri.dashboard.fragment.dailyreport.QrDailyreportFragment"
+        android:label="fragment_qr_dailyreport"
+        tools:layout="@layout/fragment_qr_dailyreport" />
+</navigation>

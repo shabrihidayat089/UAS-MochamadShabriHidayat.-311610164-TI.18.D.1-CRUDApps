@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "410858585770",
+    "project_id": "uas-shabri",
+    "storage_bucket": "uas-shabri.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410858585770:android:7798d5275936bcbf859ad3",
+        "android_client_info": {
+          "package_name": "com.example.uasshabri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410858585770-65k7msv4qu1gakhuftg2ia3nhovkio61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLJE4OkM8lN5pKhLL1W1hDHGTykHCHpX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "410858585770-65k7msv4qu1gakhuftg2ia3nhovkio61.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

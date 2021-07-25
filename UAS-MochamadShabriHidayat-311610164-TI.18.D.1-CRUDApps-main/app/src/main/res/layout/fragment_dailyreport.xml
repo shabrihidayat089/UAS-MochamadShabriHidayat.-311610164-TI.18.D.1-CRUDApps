@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard.fragment.dailyreport.DailyreportFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/dailyreport_list"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/addDailyreport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/rounded_corner_success"
+        android:drawableStart="@drawable/ic_add_white"
+        android:ems="7"
+        android:text="@string/add_data"
+        android:textColor="@color/colorWhite" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleviewDailyreport"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        tools:listitem="@layout/item_row_dailyreport" />
+
+</RelativeLayout>
